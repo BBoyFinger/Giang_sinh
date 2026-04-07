@@ -1,0 +1,16 @@
+{
+  "name": "hospital-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace web run dev",
+    "dev:api": "npm --workspace api run start:dev",
+    "build:web": "npm --workspace web run build",
+    "build:api": "npm --workspace api run build",
+    "lint": "npm --workspace web run lint && npm --workspace api run lint"
+  }
+}
